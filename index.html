@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" crossorigin="anonymous">
+    <!-- Custom CSS and JS-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Pizza shop</title>
+</head>
+
+<body>
+    <div id="header" class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="header__wrapper">
+                        <div class="header__inner">
+                            <div class="header__logo">
+                                <img src="assets/images/logo.svg" alt="logo" title="logo">
+                            </div>
+                            <div class="header__text">
+                                <div class="header__text-title">PIZZA SHOP</div>
+                                <div class="header__text-desk">самая вкусная пицца во вселенной</div>
+                            </div>
+                        </div>
+                        <div class="header__cart">
+                            <div class="header__cart-total-price">0 ₽</div>
+                            <div class="header__cart-quantitys-items">0</div>
+                        </div>
+                        <div class="header__mini-cart hidden">
+                            <div class="header__mini-cart-top">
+                                <div class="header__mini-cart-top-title">
+                                    <i class="header__mini-cart-top-title-icon">
+                              <img src="./assets/images/cart-icon-bg.svg">
+                            </i>
+                                    <div class="header__mini-cart-top-title-text">Корзина</div>
+                                </div>
+                                <div class="header__mini-cart-top-clearAll" onclick="DeleteAllBaksetItems();">Очистить корзину</div>
+                            </div>
+                            <div class="header__mini-cart-middle">
+                                <div class="header__mini-cart-middle-products">
+                                    <!-- Выгрузка корзины из localStorage -->
+                                </div>
+                                <div class="header__mini-cart-middle-products-empty">
+                                    <p class="header__mini-cart-middle-products-empty-title">Корзина пустая </p>
+                                    <p class="header__mini-cart-middle-products-empty-text">Вероятней всего, вы не заказывали ещё пиццу. Для того, чтобы заказать пиццу, перейди на главную страницу.</p>
+                                </div>
+                            </div>
+
+                            <div class="header__mini-cart-footer">
+                                <div class="header__mini-cart-footer-left-side">
+                                    <div class="header__mini-cart-footer-left-side-amount-items">Всего товаров: <span class="color-orange">0 шт.</span></div>
+                                    <button class="header__mini-cart-footer-left-side-back">Продолжить покупки</button>
+                                </div>
+                                <div class="header__mini-cart-footer-right-side">
+                                    <div class="header__mini-cart-footer-right-side-amount-sum">Сумма заказа: <span class="color-orange">0 ₽</span></div>
+                                    <button class="header__mini-cart-footer-right-side-order-btn">Оформить заказ</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="catalog" id="catalog">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <nav class="catalog__navigation">
+                        <div class="catalog__navigation-category">
+                            <ul class="catalog__navigation-category-list">
+                                <li class="catalog__navigation-category-list-item active" data-id-category="1">Все</li>
+                                <li class="catalog__navigation-category-list-item" data-id-category="2">Мясные</li>
+                                <li class="catalog__navigation-category-list-item" data-id-category="3">Вегетарианская</li>
+                                <li class="catalog__navigation-category-list-item" data-id-category="4">Гриль</li>
+                                <li class="catalog__navigation-category-list-item" data-id-category="5">Острые</li>
+                                <li class="catalog__navigation-category-list-item" data-id-category="6">Закрытые</li>
+                            </ul>
+                        </div>
+                        <div class="catalog__navigation-category-mobile">
+                            <div class="catalog__navigation-category-select">
+                                <div class="catalog__navigation-category-select-title">Все пиццы</div>
+                                <ul class="catalog__navigation-category-select-list">
+                                    <li class="catalog__navigation-category-select-list-item active" data-id-category="1">Все пиццы</li>
+                                    <li class="catalog__navigation-category-select-list-item" data-id-category="2">Мясные</li>
+                                    <li class="catalog__navigation-category-select-list-item" data-id-category="3">Вегетарианская</li>
+                                    <li class="catalog__navigation-category-select-list-item" data-id-category="4">Гриль</li>
+                                    <li class="catalog__navigation-category-select-list-item" data-id-category="5">Острые</li>
+                                    <li class="catalog__navigation-category-select-list-item" data-id-category="6">Закрытые</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="catalog__navigation-sort">
+                            <div class="catalog__navigation-sort-text">Сортировка по:</div>
+                            <div class="catalog__navigation-sort-type" onclick="toggleSortVisible();">популярности</div>
+                            <ul class="catalog__navigation-sort-list hidden">
+                                <li class="catalog__navigation-sort-list-item active" data-sort="popular">популярности</li>
+                                <li class="catalog__navigation-sort-list-item" data-sort="price">цене</li>
+                                <li class="catalog__navigation-sort-list-item" data-sort="name">алфавиту</li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="catalog__section-wrapper">
+                        <!--Вывод категорий из json файла-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Catalog -->
+    <script src="components/catalog/category/renderCatalog.js"></script>
+    <script src="components/catalog/category/toggleCategories.js"></script>
+    <script src="components/catalog/category/sort.js"></script>
+    <!-- Products -->
+    <script src="components/catalog/category/products/toggleOptions.js"></script>
+    <script src="components/catalog/category/products/counter.js"></script>
+    <!-- Basket -->
+    <script src="components/basket/miniBasket.js"></script>
+    <script src="components/basket/basket.js"></script>
+</body>
+
+</html>
