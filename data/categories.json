@@ -1,11 +1,9 @@
-[
-    {
+[{
         "categoryId": 1,
         "categoryName": "Все пиццы",
-        "products": [
-            {
+        "products": [{
                 "productId": 1,
-                "imageSrc": "/assets/images/pItem.png",
+                "imageSrc": "./assets/images/pItem.png",
                 "productName": "Чизбургер-пицца",
                 "dough": {
                     "small": "Тонкое",
@@ -20,7 +18,7 @@
             },
             {
                 "productId": 2,
-                "imageSrc": "/assets/images/pItem2.png",
+                "imageSrc": "./assets/images/pItem2.png",
                 "productName": "Сырная",
                 "dough": {
                     "small": "Тонкое",
@@ -35,7 +33,7 @@
             },
             {
                 "productId": 3,
-                "imageSrc": "/assets/images/pItem4.png",
+                "imageSrc": "./assets/images/pItem4.png",
                 "productName": "Креветки по-азиатски",
                 "dough": {
                     "small": "Тонкое",
@@ -50,7 +48,7 @@
             },
             {
                 "productId": 4,
-                "imageSrc": "/assets/images/pItem3.png",
+                "imageSrc": "./assets/images/pItem3.png",
                 "productName": "Сырный цыпленок",
                 "dough": {
                     "small": "Тонкое",
@@ -65,7 +63,7 @@
             },
             {
                 "productId": 5,
-                "imageSrc": "/assets/images/pItem.png",
+                "imageSrc": "./assets/images/pItem.png",
                 "productName": "Морская",
                 "dough": {
                     "small": "Тонкое",
@@ -80,7 +78,7 @@
             },
             {
                 "productId": 6,
-                "imageSrc": "/assets/images/pItem2.png",
+                "imageSrc": "./assets/images/pItem2.png",
                 "productName": "Советская",
                 "dough": {
                     "small": "Тонкое",
@@ -95,7 +93,7 @@
             },
             {
                 "productId": 7,
-                "imageSrc": "/assets/images/pItem4.png",
+                "imageSrc": "./assets/images/pItem4.png",
                 "productName": "Ананасовая",
                 "dough": {
                     "small": "Тонкое",
@@ -110,7 +108,7 @@
             },
             {
                 "productId": 8,
-                "imageSrc": "/assets/images/pItem3.png",
+                "imageSrc": "./assets/images/pItem3.png",
                 "productName": "Пепперони",
                 "dough": {
                     "small": "Тонкое",
@@ -124,15 +122,14 @@
                 "price": "385 ₽"
             }
         ]
-        
+
     },
     {
         "categoryId": 2,
         "categoryName": "Мясные",
-        "products": [
-            {
+        "products": [{
                 "productId": 1,
-                "imageSrc": "/assets/images/pItem.png",
+                "imageSrc": "./assets/images/pItem.png",
                 "productName": "Чизбургер-пицца",
                 "dough": {
                     "small": "Тонкое",
@@ -147,7 +144,7 @@
             },
             {
                 "productId": 4,
-                "imageSrc": "/assets/images/pItem3.png",
+                "imageSrc": "./assets/images/pItem3.png",
                 "productName": "Сырный цыпленок",
                 "dough": {
                     "small": "Тонкое",
@@ -161,28 +158,26 @@
                 "price": "385 ₽"
             }
         ]
-        
+
     },
     {
         "categoryId": 3,
         "categoryName": "Вегатерианская",
-        "products":[
-            {
-                "productId": 3,
-                "imageSrc": "/assets/images/pItem4.png",
-                "productName": "Креветки по-азиатски",
-                "dough": {
-                    "small": "Тонкое",
-                    "trad": "Традиционное"
-                },
-                "size": {
-                    "sm": "26 см.",
-                    "md": "30 см.",
-                    "xs": "40 см."
-                },
-                "price": "290 ₽"
-            }
-        ]
-        
+        "products": [{
+            "productId": 3,
+            "imageSrc": "./assets/images/pItem4.png",
+            "productName": "Креветки по-азиатски",
+            "dough": {
+                "small": "Тонкое",
+                "trad": "Традиционное"
+            },
+            "size": {
+                "sm": "26 см.",
+                "md": "30 см.",
+                "xs": "40 см."
+            },
+            "price": "290 ₽"
+        }]
+
     }
 ]
